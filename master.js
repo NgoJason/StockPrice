@@ -11,9 +11,12 @@
             while (container.hasChildNodes()) {
                 container.removeChild(container.lastChild);
             }
+            // Append a node with a random text
+                container.appendChild(document.createTextNode("Number of Shares "));
             for (i=0;i<number;i++){
-                // Append a node with a random text
-                container.appendChild(document.createTextNode("Number of Shares " + (i+1)));
+                // Append a line break 
+                container.appendChild(document.createElement("br"));
+                
                 // Create an <input> element, set its type and name attributes
                 var input = document.createElement("input");
                 input.type = "text";
@@ -37,9 +40,11 @@
             while (container.hasChildNodes()) {
                 container.removeChild(container.lastChild);
             }
+            // Append a node with a random text
+                container.appendChild(document.createTextNode("Cost of shares "));
             for (i=0;i<number;i++){
-                // Append a node with a random text
-                container.appendChild(document.createTextNode("Cost of shares " + (i+1)));
+                // Append a line break 
+                container.appendChild(document.createElement("br"));
                 // Create an <input> element, set its type and name attributes
                 var input = document.createElement("input");
                 input.type = "text";
@@ -55,6 +60,7 @@
     function addTotal(){
         //set display paragraph HTML to variable
         var pDisplay = document.getElementById('pDisplay');
+        var pDisplay2 = document.getElementById('pDisplay2');
         var totalShares  = 0;
         var totalSum = 0;
         var number = document.getElementById("member").value;
@@ -69,10 +75,21 @@
             totalSum = totalSum + (+shares.value * +cost.value);
         }
         //pDisplay.innerHTML= "Your average cost per share is $" + parseFloat(totalSum/totalShares).toFixed(2); //Math.round(totalSum/totalShares * 100) / 100;
-        pDisplay.innerHTML= "your total number of shares is" + totalShares;
-        pDisplay.innerHTML += " your average per share is " + parseFloat(totalSum/totalShares).toFixed(2);
+        pDisplay.innerHTML =  totalShares;
+        pDisplay2.innerHTML = "$"+ parseFloat(totalSum/totalShares).toFixed(2);
         
     }
        
 
 
+   function displayNav () {
+     document.getElementById('nav').style.display = "block";
+   }
+   
+   function hideNav() {
+     var pDisplay = document.getElementById('pDisplay');
+     var pDisplay2 = document.getElementById('pDisplay2');
+     pDisplay.innerHTML = "";
+     pDisplay2.innerHTML = "";
+     document.getElementById('nav').style.display = "none";
+   }
