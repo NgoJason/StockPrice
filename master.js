@@ -49,6 +49,7 @@
                 var input = document.createElement("input");
                 input.type = "text";
                 input.name = "member" + i;
+                input.placeholder = "$";
                 input.setAttribute("id", "cost"+i);
                 container.appendChild(input);
                 // Append a line break 
@@ -80,10 +81,11 @@
         
     }
        
-
+  
 
    function displayNav () {
      document.getElementById('nav').style.display = "block";
+     
    }
    
    function hideNav() {
@@ -93,3 +95,11 @@
      pDisplay2.innerHTML = "";
      document.getElementById('nav').style.display = "none";
    }
+    function displayCalculateBtn () {
+       //display calculate button
+     document.getElementById('btnDiv').style.display = "block";
+   }
+   
+   function reload (){
+    location.reload();
+  }

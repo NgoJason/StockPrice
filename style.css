@@ -1,0 +1,117 @@
+body{
+  background-color: #F7F7F7;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h1{
+  color: #18F4A5;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.box {
+  float: left;
+  width: 220px;
+  height: 100px;
+  margin: 1em;
+  height:auto; 
+  overflow:auto;
+}
+
+.left{
+  float:left;
+  width:300px;
+  padding-left: 39px;
+}
+
+.right {
+    float:right;
+    width:300px;
+}
+
+.center {
+  display: inline-block;
+  margin:0 auto;
+  width:500px;
+  text-align: center;
+  padding-top: 30px;
+  
+}
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: #333333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+#top-div{
+  padding-left: 55px;
+}
+
+#transP {
+  padding-left: 1px;
+}
+#main-div{
+  padding-left: 40px;
+}
+
+#nav{
+  display: none;
+}
+
+#pDisplay, #pDisplay2{
+  color: #00ffcc;
+  font-size: 270%;
+  font-weight: bold;
+}
+
+.Navtext {
+  color: white;
+}
+
+.square {
+    background-color: #333333;
+    border-radius: 0;
+
+}
+
+.square:focus{
+  background-color:#18F4A5;
+  color:#333;
+}
+.square:hover{
+  background-color:#18F4A5;
+  color:#333;
+}
+
+#btnDiv{
+  clear: both;
+  padding-left: 56px;
+  display: none;
+}
+
+.btn-danger {
+  border-radius: 0;
+}
+
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 160px;  
+}
+
+input:focus {
+    background-color:  #18F4A5;;
+}
+
+/* border for top of page*/
+.container-fluid{
+    border-top: 8px solid #18F4A5;
+}
