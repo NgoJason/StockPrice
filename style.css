@@ -91,11 +91,13 @@ h1{
   color:#333;
 }
 
+
 #btnDiv{
   clear: both;
   padding-left: 56px;
   display: none;
 }
+
 
 .btn-danger {
   border-radius: 0;
@@ -107,6 +109,10 @@ h1{
     width: 160px;  
 }
 
+
+#populateBTN{
+  margin-left: 45px;
+}
 input:focus {
     background-color:  #18F4A5;;
 }
